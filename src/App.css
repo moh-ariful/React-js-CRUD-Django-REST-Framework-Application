@@ -12,7 +12,7 @@
 }
 
 .divbtn {
-  float: left;
+  float: right;
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -44,11 +44,11 @@ const Removefunction = (id) => {
     <div className="container">
       <div className="card">
         <div className="card-title">
-          <h2>Employee Listing</h2>
+          <h2>Employee List</h2>
         </div>
         <div className="card-body">
           <div className="divbtn">
-            <Link to="employee/create" className="btn btn-secondary">
+            <Link to="employee/create" className="btn btn-warning">
               Add New (+)
             </Link>
           </div>
