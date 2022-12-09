@@ -9,7 +9,7 @@ import EmpEdit from "./EmpEdit";
 function App() {
   return (
     <div className="container mb-5 my-3 text-center">
-      <h1>React JS CRUD Application</h1>
+      <h1>ReactJS+Django REST Framework CRUD Application</h1>
       <h3>“Light tomorrow with today.” — Elizabeth Barrett Browning</h3>
       <BrowserRouter>
         <Routes>
