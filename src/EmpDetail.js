@@ -25,7 +25,7 @@ const EmpDetail = () => {
                 
             <div className="card row" style={{ "textAlign": "left" }}>
                 <div className="card-title">
-                    <h2>Employee Create</h2>
+                    <h2>Add Employees</h2>
                 </div>
                 <div className="card-body"></div>
 
