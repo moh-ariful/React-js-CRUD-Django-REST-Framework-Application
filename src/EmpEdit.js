@@ -40,7 +40,7 @@ const EmpEdit = () => {
         headers:{"content-type":"application/json"},
         body:JSON.stringify(empdata)
       }).then((res)=>{
-        alert('Saved successfully.')
+        alert('Successfully saved correctly')
         navigate('/');
       }).catch((err)=>{
         console.log(err.message)
