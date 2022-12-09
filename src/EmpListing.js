@@ -20,7 +20,7 @@ const Removefunction = (id) => {
       fetch("http://localhost:7000/employee/" + id, {
           method: "DELETE"
       }).then((res) => {
-          alert('Removed successfully.')
+          alert('Deleted successfully.')
           window.location.reload();
       }).catch((err) => {
           console.log(err.message)
