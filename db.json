@@ -1,0 +1,24 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "name": "Cak Mad Edited",
+      "email": "cakmad@email.com",
+      "phone": "081231178088"
+    },
+    {
+      "name": "Slamet",
+      "email": "slamet@gmail.com",
+      "phone": "0815571057",
+      "active": true,
+      "id": 3
+    },
+    {
+      "name": "Bagong Hebat",
+      "email": "bagong@email.com",
+      "phone": "0815561507",
+      "active": true,
+      "id": 4
+    }
+  ]
+}
