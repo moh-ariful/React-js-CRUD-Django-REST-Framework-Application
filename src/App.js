@@ -8,9 +8,9 @@ import EmpEdit from "./EmpEdit";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container mb-5 my-3 text-center">
       <h1>React JS CRUD Application</h1>
-      <h2>Employee list</h2>
+      <h3>“Light tomorrow with today.” — Elizabeth Barrett Browning</h3>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<EmpListing />}></Route>
