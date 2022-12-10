@@ -17,8 +17,13 @@ const LoadEdit = (id) => {
 
 const Removefunction = (id) => {
   if (window.confirm('Are you sure to delete it?')) {
-      fetch("http://localhost:8000/api/" + id, {
-          method: "DELETE"
+    fetch("http://localhost:8000/api/"), {
+        method:'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Token 0e362d78cde154b5538a13176a5b83760953247f'
+        }
+    };)
       }).then((res) => {
           alert('Deleted successfully.')
           window.location.reload();
@@ -29,7 +34,13 @@ const Removefunction = (id) => {
 }
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/")
+    fetch("http://localhost:8000/api/"), {
+        method:'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Token 0e362d78cde154b5538a13176a5b83760953247f'
+        }
+    });
       .then((res) => {
         return res.json();
       })
