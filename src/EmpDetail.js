@@ -8,7 +8,7 @@ const EmpDetail = () => {
     const [empdata, empdatachange] = useState({});
 
     useEffect(() => {
-        fetch("http://localhost:7000/employee/" + empid).then((res) => {
+        fetch("http://localhost:8000/api/" + empid).then((res) => {
             return res.json();
         }).then((resp) => {
             empdatachange(resp);
@@ -22,10 +22,10 @@ const EmpDetail = () => {
                 <div className="offset-lg-3 col-lg-6"> */}
 
                <div className="container">
-                
+
             <div className="card row" style={{ "textAlign": "left" }}>
                 <div className="card-title">
-                    <h2>Add Employees</h2>
+                    <h2>Employee Detail</h2>
                 </div>
                 <div className="card-body"></div>
 

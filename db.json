@@ -1,24 +1,30 @@
 {
-  "employee": [
+  "api": [
     {
       "id": 1,
-      "name": "Cak Mad Edited",
+      "name": "Cak Mad Edited Kedua",
       "email": "cakmad@email.com",
       "phone": "081231178088"
     },
     {
+      "id": 2,
       "name": "Slamet",
       "email": "slamet@gmail.com",
       "phone": "0815571057",
-      "active": true,
-      "id": 3
+      "active": true
     },
     {
+      "id": 3,
       "name": "Bagong Hebat",
       "email": "bagong@email.com",
       "phone": "0815561507",
-      "active": true,
-      "id": 4
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "Nunung Cantiq Sekali",
+      "email": "nunung@gmail.com",
+      "phone": "08123456789"
     }
   ]
 }

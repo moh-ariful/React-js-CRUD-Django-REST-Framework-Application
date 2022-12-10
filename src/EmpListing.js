@@ -17,7 +17,7 @@ const LoadEdit = (id) => {
 
 const Removefunction = (id) => {
   if (window.confirm('Are you sure to delete it?')) {
-      fetch("http://localhost:7000/employee/" + id, {
+      fetch("http://localhost:8000/api/" + id, {
           method: "DELETE"
       }).then((res) => {
           alert('Deleted successfully.')
@@ -29,7 +29,7 @@ const Removefunction = (id) => {
 }
 
   useEffect(() => {
-    fetch("http://localhost:7000/employee")
+    fetch("http://localhost:8000/api/")
       .then((res) => {
         return res.json();
       })

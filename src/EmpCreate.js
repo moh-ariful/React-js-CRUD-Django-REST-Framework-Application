@@ -16,9 +16,9 @@ const EmpCreate = () => {
     const handlesubmit=(e)=>{
       e.preventDefault();
       const empdata={name,email,phone,active};
-      
 
-      fetch("http://localhost:7000/employee",{
+
+      fetch("http://localhost:8000/api/",{
         method:"POST",
         headers:{"content-type":"application/json"},
         body:JSON.stringify(empdata)
@@ -79,7 +79,7 @@ const EmpCreate = () => {
                                         <div className="form-check">
                                         <input checked={active} onChange={e=>activechange(e.target.checked)} type="checkbox" className="form-check-input"></input>
                                             <label  className="form-check-label">Is Active</label>
-                                            
+
                                         </div>
                                     </div>
                                     <div className="col-lg-12">

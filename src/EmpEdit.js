@@ -7,7 +7,7 @@ const EmpEdit = () => {
     //const [empdata, empdatachange] = useState({});
 
     useEffect(() => {
-        fetch("http://localhost:7000/employee/" + empid).then((res) => {
+        fetch("http://localhost:8000/api/" + empid).then((res) => {
             return res.json();
         }).then((resp) => {
             idchange(resp.id);
@@ -33,9 +33,9 @@ const EmpEdit = () => {
     const handlesubmit=(e)=>{
       e.preventDefault();
       const empdata={id,name,email,phone,active};
-      
 
-      fetch("http://localhost:7000/employee/"+empid,{
+
+      fetch("http://localhost:8000/api/"+empid+"/",{
         method:"PUT",
         headers:{"content-type":"application/json"},
         body:JSON.stringify(empdata)
@@ -47,7 +47,7 @@ const EmpEdit = () => {
       })
 
     }
-    return ( 
+    return (
         <div>
 
         <div className="row">
@@ -95,7 +95,7 @@ const EmpEdit = () => {
                                     <div className="form-check">
                                     <input checked={active} onChange={e=>activechange(e.target.checked)} type="checkbox" className="form-check-input"></input>
                                         <label  className="form-check-label">Is Active</label>
-                                        
+
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
@@ -118,5 +118,5 @@ const EmpEdit = () => {
     </div>
      );
 }
- 
+
 export default EmpEdit;
